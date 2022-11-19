@@ -66,20 +66,27 @@ textarea{
 }
 button{
     border: none;
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
     background-color: var(--glass-color);
+}
+button:active{
+    background-color: var(--active-color);
 }
 input{
     background-color: var(--glass-color);
 }
 
 footer{
-    position: absolute;
     bottom: 0;
+    position: absolute;
     left: 0;
     width: 100%;
     height: max-content;
+}
+article{
+    max-width: 75%;
+    
 }
 
 @media (max-width:527px){
