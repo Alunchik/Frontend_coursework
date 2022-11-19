@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="source/styles/form.css">
+    </head>
+    <body>
+        <header></header>
+    
+        <main>
+            <form action="trial_lesson_form" id="form">
+                <fieldset>
+                    <legend>Запись в онлайн-школу английского языка</legend>
+                <p>
+                    <label for="tel">Номер телефона</label>
+                    <input type="tel" placeholder="" name = "tel" id = "tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                </p>
+                <p>
+                    <label for="email">Почта</label>
+                    <input type="email" name = "email" id = "email">
+                </p>
+                <p>Выберите ваш уровень английского языка:</p>
+                <div>
+                    <input type="radio" name="lvl" value="a1">
+                    <label for="a1">А1</label>
+    
+                    <input type="radio" name="lvl" value="a2">
+                    <label for="a2">А2</label>
+    
+                    <input type="radio" name="lvl" value="b1">
+                    <label for="b1">B1</label>
+    
+                    <input type="radio" name="lvl" value="b2">
+                    <label for="b2">B2</label>
+    
+                    <input type="radio" name="lvl" value="c1">
+                    <label for="c1">C1</label>
+    
+                    <input type="radio" name="lvl" value="c2">
+                    <label for="c2">C2</label>
+                </div>
+                <p>
+                    <p>Выберите ваш уровень английского языка:</p>
+                    <div>
+                        <input type="radio" name="reason" value="">
+                    </div>
+                    <select required="true" multiple="true" size =3 name="lvl" id="lvl">Выберите цель изучения английского:
+                    <option value="">-- Выберите варианты --</option>
+                    <option value="work">Для работы</option>
+                    <option value="stud">Для учебы</option>
+                    <option value="cult">Для просмотра фильмов,чтения литературы и т.д.</option>
+                    <option value="diff">Другое</option>
+                </select>
+                </p>
+                  <label for="why">Расскажите, почему вы выбрали именно нас</label> 
+                  <p>
+                  <textarea name="why" id="why" required="false" maxlength="300" minlength="20" placeholder="Введите ваш текст..."  cols="50" rows="10"></textarea> 
+                </p>
+                <p>
+                    <label for="tel">Согласен на обработку персональных данных</label>
+                    <input type="checkbox" name="check" id="check" required="true">
+                </p>
+                <button type="submit">Отправить</button>
+            </fieldset>
+            </form>
+            <button id="bebra">Отправить1</button>
+        </main>
+            <script src="source/scripts/form.js"></script>
+        <footer></footer>
+    </body>
+</html>

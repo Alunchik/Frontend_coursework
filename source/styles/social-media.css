@@ -1,0 +1,47 @@
+.social_media{
+    display: flex;
+    position: relative;
+}
+
+.sm-icon{
+    background-color: none;
+    border-radius: 100%;
+   height: 50px;
+   width: 50px;
+    border: black;
+    background: none;
+    z-index:10;
+    position: relative;
+    margin: 20px;
+    box-shadow: 5px 2px 2px black;
+}
+.sm-icon::before{
+    content: ' .';
+    position: absolute;
+    top: inherit;
+    width: inherit;
+    height: 0;
+    border-radius: 50% 50% 0 0;
+    background: linear-gradient(orange, 40%, yellow);
+    z-index: -10;
+}
+.sm-icon:hover::before{
+    animation: social-medias 0.6s forwards ease-out;
+
+}
+@keyframes social-medias {
+    from {
+        height: 0;
+        
+    }
+    50%{
+        border-radius: 50% 50% 25% 25%;
+    }
+    to {
+        height: inherit;
+        border-radius: 100%;
+    }
+}
+a{
+    color: aliceblue;
+}
