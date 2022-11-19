@@ -2,13 +2,14 @@
     --main-bg-color: #191d25;
     --glass-color: rgba(255, 255, 255, 0.1);
     --header-bg-color: #2f3a3b;
+    --bg-gradient: linear-gradient(#191d25, #44577c);
 }
 
 a{
     color: aliceblue;
 }
 body{
-    background-color: var(--main-bg-color);
+    background: var(--bg-gradient);
     color: aliceblue;
     margin-top: 100px;
 }
@@ -25,21 +26,24 @@ header{
     align-items: center;
     width: 100%;
     top:0;
+    background-color: var(--glass-color);
 }
 header img{
     position: absolute;
     left: 0;
 }
-
-header{
-    background-color: var(--header-bg-color);
+textarea::placeholder{
+    color: aliceblue;
+}
+textarea{
+    color: aliceblue;
 }
 
 .profit-container{
     display: flex;
    gap: 20px;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .profit{
     height: 300px;
@@ -54,9 +58,33 @@ header{
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
+    backdrop-filter: blur(3px);
+}
+.glass:focus{
+    outline: none;
     backdrop-filter: blur(6px);
 }
-img{
-@media (min-width:1024px) {
-    
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--glass-color);
+}
+input{
+    background-color: var(--glass-color);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+}
+
+@media (max-width:527px){
+
+    .profit-container{
+        flex-direction: column;
+    }
 }

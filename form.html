@@ -1,12 +1,16 @@
 <html>
     <head>
-        <link rel="stylesheet" href="source/styles/form.css">
+        <link rel="stylesheet" href="source/styles/style.css">
     </head>
     <body>
-        <header></header>
+        <header>
+            <img src="source/images/logo.png" alt="-" width="40px" height="40px">
+            <h1>Engeng</h1>
+        </header>
     
         <main>
-            <form action="trial_lesson_form" id="form">
+            <a href="index.html">Назад</a>
+            <form action="trial_lesson_form" id="form" class="glass">
                 <fieldset>
                     <legend>Запись в онлайн-школу английского языка</legend>
                 <p>
@@ -38,21 +42,29 @@
                     <label for="c2">C2</label>
                 </div>
                 <p>
-                    <p>Выберите ваш уровень английского языка:</p>
+                    <p>Какова ваша основная цель изучения английского?</p>
                     <div>
-                        <input type="radio" name="reason" value="">
-                    </div>
-                    <select required="true" multiple="true" size =3 name="lvl" id="lvl">Выберите цель изучения английского:
-                    <option value="">-- Выберите варианты --</option>
-                    <option value="work">Для работы</option>
-                    <option value="stud">Для учебы</option>
-                    <option value="cult">Для просмотра фильмов,чтения литературы и т.д.</option>
-                    <option value="diff">Другое</option>
-                </select>
+                        <input type="radio" name="reason" value="travel">
+                        <label for="travel">Путешествия</label>
+        
+                        <input type="radio" name="reason" value="learning">
+                        <label for="learning">Учеба</label>
+        
+                        <input type="radio" name="reason" value="kino">
+                        <label for="kino">Просмотр фильмов/чтение книг</label>
+        
+                        <input type="radio" name="reason" value="work">
+                        <label for="work">Работа</label>
+        
+                        <input type="radio" name="reason" value="speak">
+                        <label for="speak">Общение с иностранцами</label>
+        
+                        <input type="radio" name="reason" value="diff" id="diff_radio">
+                        <label for="diff">Другое</label>
                 </p>
-                  <label for="why">Расскажите, почему вы выбрали именно нас</label> 
+                  <label for="why" >Расскажите, почему вы выбрали именно нас</label> 
                   <p>
-                  <textarea name="why" id="why" required="false" maxlength="300" minlength="20" placeholder="Введите ваш текст..."  cols="50" rows="10"></textarea> 
+                  <textarea class="glass" name="why" id="why" required="false" maxlength="300" minlength="20" placeholder="Введите ваш текст..."  cols="50" rows="10"></textarea> 
                 </p>
                 <p>
                     <label for="tel">Согласен на обработку персональных данных</label>
@@ -61,7 +73,6 @@
                 <button type="submit">Отправить</button>
             </fieldset>
             </form>
-            <button id="bebra">Отправить1</button>
         </main>
             <script src="source/scripts/form.js"></script>
         <footer></footer>

@@ -1,0 +1,12 @@
+:root{
+    --main-bg-color: #191d25;
+    --glass-color: rgba(255, 255, 255, 0.1);
+    --header-bg-color: #2f3a3b;
+}
+body{
+    background-color: var(--main-bg-color);
+}
+form{
+    background-color: var(--glass-color);
+    border: none;
+}

@@ -1,5 +1,5 @@
 
-bebra.onclick = function(){
+function make_area(){
     let inp = document.createElement('textarea');
     inp.name=why;
     inp.required=true;
@@ -8,7 +8,8 @@ bebra.onclick = function(){
     inp.placeholder="Расскажите, почему";
     inp.cols=50;
     inp.rows=10;
-    differ.append(inp);
+    document.append(inp);
 }
-let differ = document.querySelector('option[value="diff"]')
+diff_radio = document.getElementById("diff_radio")
+diff_radio.addEventListener('change', make_area)
 
