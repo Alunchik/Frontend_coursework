@@ -16,13 +16,17 @@
 .topic-block{
     display: block;
     overflow: hidden;
+    justify-content: center;
 }
 .topic-block > a{
-    display: block;
     width: 100%;
     height: 100%;
     overflow: hidden;
     text-decoration: none;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-rows: 50%, 1fr;
 }
 
 .topic-block > a div{
@@ -32,7 +36,7 @@
     height: 100%;
     padding: 10px;
     position: relative;
-    top:45%;
+    grid-row: 2;
 
 }
 .topic-block > a img{

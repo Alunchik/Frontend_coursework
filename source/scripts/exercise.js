@@ -58,7 +58,7 @@ function generate_after_answer(rightness){
         word.appendChild(document.createTextNode("Правильно!"));
     }
     else {
-        word.appendChild(document.createTextNode("Неравильно! Правильный ответ:" + content_for_exercises[num-1]["right"]));
+        word.appendChild(document.createTextNode("Неравильно! Правильный ответ: " + content_for_exercises[num-1]["right"]));
     }
     exercise.appendChild(word);
     document.querySelector("main").prepend(exercise);
@@ -70,7 +70,6 @@ function generate_at_the_end(){
     const exercise = document.createElement("div");
     exercise.className = "glass exercise";
     const word = document.createElement("h3");
-        word.appendChild(document.createTextNode("Поздравляем!"));
         word.appendChild(document.createTextNode("У вас " + right_answers + " из 4 правильных ответов!"));
     exercise.appendChild(word);
     document.querySelector("main").prepend(exercise);

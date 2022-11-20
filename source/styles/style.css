@@ -21,8 +21,6 @@ body{
 footer{
     position: relative;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     gap: 20px;
     background-color: var(--main-bg-color);
@@ -78,6 +76,17 @@ textarea{
     flex-grow: 0;
 
 }
+
+form{
+    background-color: var(--glass-color);
+    border: none;
+    outline: none;
+}
+fieldset{
+    border: none;
+    outline: none;
+}
+
 .glass{
     background-color: var(--glass-color);
     border: none;
@@ -107,10 +116,40 @@ article{
     
 }
 
+
+
+@media (min-width: 527px){
+    footer {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 @media (max-width:527px){
+
+    .body-head-container{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .body-head{
+        width: 250px;
+    }
 
     .profit-container{
         flex-direction: column;
         align-items: center;
+    }
+    footer {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer #elem3{
+        grid-row: 1;
+        grid-column: 2;
+    }
+    footer address{
+        grid-column: 2;
     }
 }

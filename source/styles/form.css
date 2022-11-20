@@ -9,4 +9,9 @@ body{
 form{
     background-color: var(--glass-color);
     border: none;
+    outline: none;
+}
+fieldset{
+    border: none;
+    outline: none;
 }
