@@ -1,0 +1,43 @@
+.block-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:10px;
+    margin: 20px;
+    padding: 20px;
+    height: 90%;
+    align-self: center;
+}
+.block-container > *{
+    background-color: #44577c;
+    min-height: 30px;
+}
+#item1{
+    grid-row: span 2;
+}
+#item3{
+    grid-column: span 2;
+}
+#item4{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+#item5{
+    grid-row: span 2;
+}
+.block-container div:hover{
+    background-color: springgreen;
+    transition: all 0.9s;
+}
+ .block-container div a{
+    height: 100%;
+     overflow: hidden;
+    position: absolute;
+    width: inherit;
+    display: block;
+    text-align: center;
+}
+ .block-container div img{
+     align-self: center;
+     justify-self: center;
+ }
