@@ -25,9 +25,10 @@ footer{
     gap: 20px;
     background-color: var(--main-bg-color);
     padding: 20px;
+    height: 150px;
 }
 address{
-
+height: max-content;
 }
 
 header{
