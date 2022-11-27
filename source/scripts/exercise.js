@@ -82,6 +82,8 @@ function answer_click(){
         document.querySelector(".exercise").remove();
         num=0;
         generate_exercise(content_for_exercises[num]);
+        ab.innerText="Ответить";
+        state=0;
     }
     else if(state==0){
     let right = false;

@@ -4,7 +4,7 @@
     --header-bg-color: #2f3a3b;
     --bg-gradient: linear-gradient(#191d25, #44577c);
 }
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -18,14 +18,20 @@ body{
     background: var(--bg-gradient);
     color: aliceblue;
 }
+
+.body-head-container{
+    width: 100vh;
+}
+
 footer{
-    position: relative;
+    float: bottom;
     display: grid;
     width: 100%;
     gap: 20px;
     background-color: var(--main-bg-color);
+    margin-top: 20px;
     padding: 20px;
-    height: 150px;
+    height: 100px;
 }
 address{
 height: max-content;
@@ -33,6 +39,7 @@ height: max-content;
 
 header{
     display: grid;
+    width: 100%;
     grid-template-rows: 1fr 1fr;
     padding: 20px;
     background-color: var(--glass-color);
@@ -55,7 +62,13 @@ header img{
     left: 10px;
 }
 
-
+.href_butt{
+    background-color: var(--glass-color);
+    padding: 10px;
+    width: max-content;
+    margin-top: 10px;
+    border-radius: 10px;
+}
 
 textarea::placeholder{
     color: aliceblue;
@@ -64,18 +77,28 @@ textarea{
     color: aliceblue;
 }
 
+.body-head-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.body-head{
+    width: 100%;
+}
+
 .profit-container{
     display: flex;
-   gap: 20px;
-    justify-content: space-around;
+    gap: 20px;
+    justify-content: space-between;
     flex-wrap: nowrap;
+    margin: 10px;
 }
-.profit{
+.profit-container > div{
+    min-width: 250px;
     height: 300px;
-    width: 250px;
-    background-color: var(--glass-color);
-    flex-grow: 0;
-
+    flex-grow: 1;
+    width: 100%;
 }
 
 form{
@@ -119,24 +142,18 @@ article{
 
 
 
-@media (min-width: 527px){
+@media (min-width: 720px){
     footer {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-}
-
-@media (max-width:527px){
-
-    .body-head-container{
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
+    .profit-container{
+        flex-direction: row;
         align-items: center;
     }
-    .body-head{
-        width: 250px;
-    }
+}
+
+@media (max-width:720px){
 
     .profit-container{
         flex-direction: column;

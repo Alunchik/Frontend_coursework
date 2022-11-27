@@ -8,7 +8,7 @@
     margin-right: 10px;
 }
 .exercise_radio_btn input{
-    display: none;
+display: none;
 }
 .exercise_radio_btn label{
     display: inline-block;
@@ -23,4 +23,9 @@
 }
 .exercise_radio_btn label:hover{
     color: var(--hover-text-color);
+}
+#answer_button{
+    margin: 20px;
+    padding: 10px;
+    color: aliceblue;
 }
