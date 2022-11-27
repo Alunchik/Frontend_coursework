@@ -5,7 +5,7 @@
     align-self: center;
 }
 .block-container > *{
-    background-color: #44577c;
+    background-color: var(--glass-color)
 }
 .block-container a:hover{
     background-color: springgreen;
@@ -23,27 +23,35 @@
     height: 100%;
     overflow: hidden;
     text-decoration: none;
-    display: grid;
+    /*display: grid;*/
     justify-content: space-around;
     align-items: center;
-    grid-template-rows: 50% 1fr;
+    display: flex;
+    grid-template-rows: 20% 1fr;
     font-size: 20pt;
 }
 
 .topic-block > a > div{
-    display: block;
-    overflow: hidden;
-    width: 90%;
-    height: 100%;
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
     padding: 10px;
-    position: relative;
     grid-row: 2;
+}
+
+.topic-block p{
+    position: relative;
+    top:10px;
 }
 
 .image{
     justify-self: center;
-    height: 100px;
-    width: 100px;
+    align-self: flex-start;
+    height: 40%;
+    width: 40%;
+    max-height: 150px;
+    max-width: 150px;
+    position:relative;
 }
 
 /*.topic-block > a img{*/
