@@ -1,5 +1,5 @@
 :root{
-    --active-color: #2eef4f;;
+    --active-color: #C9F66F;
     --hover-text-color: #b0adad;
 }
 
@@ -30,3 +30,6 @@ display: none;
     padding: 10px;
     color: aliceblue;
 }
+.exercise{
+    color: white;
+    background: linear-gradient(145deg, rgba(72,77,105,0.9113465210302871) 51%, rgba(235,79,192,0.5966873810070903) 100%);}

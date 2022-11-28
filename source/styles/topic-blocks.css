@@ -8,7 +8,7 @@
     background-color: var(--glass-color)
 }
 .block-container a:hover{
-    background-color: springgreen;
+    background-color: #C9F66F;
     color: #2f3a3b;
     transition: background-color 0.9s, color 0.4s;
 }
