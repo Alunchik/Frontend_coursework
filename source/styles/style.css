@@ -128,7 +128,7 @@ fieldset{
 
 .glass{
     background-color: var(--glass-color);
-    border: none;
+    /*border: none;*/
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
