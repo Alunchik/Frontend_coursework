@@ -95,9 +95,10 @@ textarea{
     justify-content: space-between;
     flex-wrap: nowrap;
     margin: 10px;
+    width: 90%;
 }
 .profit-container > div{
-    min-width: 250px;
+    min-width: 150px;
     height: 300px;
     flex-grow: 1;
 }
@@ -156,6 +157,7 @@ article{
         width: 30%;
     }
 }
+
 
 @media (max-width:720px){
 

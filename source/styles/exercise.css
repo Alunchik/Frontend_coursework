@@ -1,5 +1,5 @@
 :root{
-    --active-color: #233f6d;
+    --active-color: #2eef4f;;
     --hover-text-color: #b0adad;
 }
 
@@ -20,6 +20,7 @@ display: none;
 }
 .exercise_radio_btn input:checked + label{
     background: var(--active-color);
+    color: #191d25;
 }
 .exercise_radio_btn label:hover{
     color: var(--hover-text-color);
