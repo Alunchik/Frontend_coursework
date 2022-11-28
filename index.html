@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="source/styles/style.css">
         <link rel="stylesheet" href="source/styles/slider.css">
+        <link rel="stylesheet" href="source/styles/burger.css">in
         <link rel="shortcut icon" href="source/images/logo.png" type="image/x-icon">
         <meta property="og:image" content="logo.png">
     </head>
@@ -18,9 +19,21 @@
             </div>
             <nav>
                 <a href="topics.html">Полезные статьи</a>
-                <a href="exercise.html">Упражнения</a>
                 <a href="index.html">Главная</a>
+                <a href="exercise.html">Упражнения</a>
             </nav>
+            <div class="burger-menu">
+                <script src="scripts/burger-menu.js"></script>
+                <a href="" class="burger-menu_button">
+                    <span class="burger-menu_lines"></span>
+                </a>
+                <nav class="burger-menu_nav">
+                    <a href="index.html" class="burger-menu_link">Главная</a>
+                    <a href="topics.html" class="burger-menu_link">Полезные статьи</a>
+                    <a href="exercise.html" class="burger-menu_link">Упражнения</a>
+                </nav>
+                <div class="burger-menu_overlay"></div>
+            </div>
         </header>
 
         <main>

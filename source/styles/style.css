@@ -1,3 +1,4 @@
+
 :root{
     --main-bg-color: #191d25;
     --glass-color: rgba(255, 255, 255, 0.1);
@@ -169,6 +170,9 @@ input{
     .profit-container > div{
         width: 30%;
     }
+    .burger-menu{
+        visibility: hidden;
+    }
 }
 
 
@@ -191,5 +195,8 @@ input{
     }
     footer address{
         grid-column: 2;
+    }
+    .burger-menu{
+        visibility: visible;
     }
 }
