@@ -114,13 +114,16 @@ textarea{
 }
 
 form{
-    background-color: var(--glass-color);
+    background: linear-gradient(327deg, rgba(142,194,93,0.9113465210302871) 11%, rgba(255,191,64,0.8210881764815301) 50%);
+
     border: none;
     outline: none;
 }
 fieldset{
     border: none;
+    background-color: var(--glass-color);
     outline: none;
+    padding: 20px;
 }
 
 .glass{
