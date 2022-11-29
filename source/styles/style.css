@@ -102,16 +102,20 @@ textarea{
     flex-wrap: nowrap;
     margin: 10px;
     width: 90%;
-}
-.profit-container > div:nth-child(2){
     background: linear-gradient(203deg, rgba(192,245,110,0.6628707444169514) 1%, rgba(154,222,49,0.9617666890975141) 21%, rgba(255,191,64,1) 75%, rgba(235,79,192,0.5966873810070903) 100%);}
-.profit-container > div:nth-child(3){
-    background: linear-gradient(203deg, rgba(255,191,64,1) 23%, rgba(235,79,192,0.5966873810070903) 99%, rgba(154,222,49,0.9617666890975141) 100%);}
+.profit-container > div:nth-child(2) {
+}
+
+    /*background: linear-gradient(203deg, rgba(192,245,110,0.6628707444169514) 1%, rgba(154,222,49,0.9617666890975141) 21%, rgba(255,191,64,1) 75%, rgba(235,79,192,0.5966873810070903) 100%);}*/
+.profit-container > div:nth-child(3) {
+}
+
+    /*background: linear-gradient(203deg, rgba(255,191,64,1) 23%, rgba(235,79,192,0.5966873810070903) 99%, rgba(154,222,49,0.9617666890975141) 100%);}*/
 .profit-container > div{
     min-width: 150px;
     height: 300px;
     flex-grow: 1;
-    background: var(--card-gradient);
+    background: var(--glass-color);
 }
 
 form{
