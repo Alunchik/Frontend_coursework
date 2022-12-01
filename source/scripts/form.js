@@ -1,15 +1,27 @@
-
-function make_area(){
-    let inp = document.createElement('textarea');
-    inp.name=why;
-    inp.required=true;
-    inp.maxLength=300;
-    inp.minLengt=30;
-    inp.placeholder="Расскажите, почему";
-    inp.cols=50;
-    inp.rows=10;
-    document.append(inp);
+function changeVisible(state){
+    let reason_area = document.getElementById("reason_diff");
+    let label = document.getElementById("reason_diff_label");
+    if(state==true){
+        reason_area.style.display="block";
+        label.style.display="block";
 }
-diff_radio = document.getElementById("diff_radio")
-diff_radio.addEventListener('change', make_area)
+    else{
+        reason_area.style.display="none";
+        label.style.display="none";
+    }
 
+}
+
+
+
+var diff_radios = document.querySelectorAll('input[name="reason"]');
+diff_radios.forEach(function (btn){
+   btn.addEventListener('click', function (e){
+       if(diff_radio.checked){
+           changeVisible(true);
+       }
+       else{
+           changeVisible(false);
+       }
+   })
+})

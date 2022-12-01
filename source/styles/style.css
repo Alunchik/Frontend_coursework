@@ -153,6 +153,9 @@ fieldset{
 article{
     max-width: 75%;
 }
+#reason_diff, #reason_diff_label{
+    display: none;
+}
 
 button{
     border: none;
