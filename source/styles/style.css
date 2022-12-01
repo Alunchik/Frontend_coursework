@@ -26,9 +26,10 @@ body{
 
 footer{
     float: bottom;
-
     color: white;
     display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     width: 100%;
     gap: 20px;
     background-color: var(--main-bg-color);
@@ -36,8 +37,10 @@ footer{
     padding: 20px;
     height: 100px;
 }
+
 address{
 height: max-content;
+    grid-row: 1/span 2;
 }
 
 header{
@@ -176,8 +179,12 @@ input{
 
 @media (min-width: 720px){
     footer {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer address{
+        grid-column: 2;
+        grid-row: 1/ span 3;
     }
     .profit-container{
         flex-direction: row;
