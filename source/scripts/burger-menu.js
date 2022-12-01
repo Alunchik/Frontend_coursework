@@ -1,26 +1,39 @@
-function burgerMenu(selector) {
-    let menu = $(selector);
-    let button = menu.find('.burger-menu_button', '.burger-menu_lines');
-    let links = menu.find('.burger-menu_link');
-    let overlay = menu.find('.burger-menu_overlay');
+const hamb = document.querySelector("#hamb");
+const popup = document.querySelector("#popup");
+const body = document.body;
 
-    button.on('click', (e) => {
-        e.preventDefault();
-        toggleMenu();
-    });
+// Клонируем меню, чтобы задать свои стили для мобильной версии
+const menu = document.querySelector("#menu").cloneNode(1);
 
-    links.on('click', () => toggleMenu());
-    overlay.on('click', () => toggleMenu());
+// При клике на иконку hamb вызываем ф-ию hambHandler
+hamb.addEventListener("click", hambHandler);
 
-    function toggleMenu(){
-        menu.toggleClass('burger-menu_active');
-
-        if (menu.hasClass('burger-menu_active')) {
-            $('body').css('overlow', 'hidden');
-        } else {
-            $('body').css('overlow', 'visible');
-        }
-    }
+// Выполняем действия при клике ..
+function hambHandler(e) {
+    e.preventDefault();
+    // Переключаем стили элементов при клике
+    popup.classList.toggle("open");
+    hamb.classList.toggle("active");
+    body.classList.toggle("noscroll");
+    renderPopup();
 }
 
-burgerMenu('.burger-menu');
+// Здесь мы рендерим элементы в наш попап
+function renderPopup() {
+    popup.appendChild(menu);
+}
+
+// Код для закрытия меню при нажатии на ссылку
+const links = Array.from(menu.children);
+
+// Для каждого элемента меню при клике вызываем ф-ию
+links.forEach((link) => {
+    link.addEventListener("click", closeOnClick);
+});
+
+// Закрытие попапа при клике на меню
+function closeOnClick() {
+    popup.classList.remove("open");
+    hamb.classList.remove("active");
+    body.classList.remove("noscroll");
+}

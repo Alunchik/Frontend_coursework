@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="source/styles/style.css">
         <link rel="stylesheet" href="source/styles/slider.css">
-        <link rel="stylesheet" href="source/styles/burger.css">in
+        <link rel="stylesheet" href="source/styles/burger.css">
         <link rel="shortcut icon" href="source/images/logo.png" type="image/x-icon">
         <meta property="og:image" content="logo.png">
     </head>
@@ -18,23 +18,30 @@
                 <img src="source/images/logo.png" alt="-" width="40px" height="40px">
                 <h1>Engla</h1>
             </div>
-            <nav>
+            <nav class="desktop-nav">
                 <a href="topics.html">Полезные статьи</a>
                 <a href="index.html">Главная</a>
                 <a href="exercise.html">Упражнения</a>
             </nav>
-            <div class="burger-menu">
-                <script src="scripts/burger-menu.js"></script>
-                <a href="" class="burger-menu_button">
-                    <span class="burger-menu_lines"></span>
-                </a>
-                <nav class="burger-menu_nav">
-                    <a href="index.html" class="burger-menu_link">Главная</a>
-                    <a href="topics.html" class="burger-menu_link">Полезные статьи</a>
-                    <a href="exercise.html" class="burger-menu_link">Упражнения</a>
-                </nav>
-                <div class="burger-menu_overlay"></div>
-            </div>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar__wrap">
+                        <div class="hamb">
+                            <div class="hamb__field" id="hamb">
+                                <span class="bar"></span> <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                        <a href="#" class="logo" id="logo"></a>
+                        <ul class="menu" id="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="topics.html">Полезные статьи</a></li>
+                            <li><a href="exercise.html">Упражнения</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="popup" id="popup"></div>
         </header>
 
         <main>
@@ -176,5 +183,5 @@
             </address>
         </footer>
     </body>
-    <script src="scripts/form.js"></script>
+    <script src="source/scripts/burger-menu.js"></script>
 </html>

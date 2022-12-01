@@ -75,6 +75,8 @@ article img{ /*размер изображений слайдера*/
     display: block;
     height: 30px;
     width: 30px;
+    background-color: var(--glass-color);
+    border-radius: 100%;
 }
 
 /*настройка переключения и положения для правой стрелки*/
@@ -89,6 +91,8 @@ article img{ /*размер изображений слайдера*/
     background-image: url("next.png");
     display: block;
     height: 30px;
+    background-color: var(--glass-color);
+    border-radius: 100%;
     width: 30px;
 }
 

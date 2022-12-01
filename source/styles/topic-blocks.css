@@ -3,6 +3,7 @@
     margin: 20px;
     padding: 20px;
     align-self: center;
+    min-height: 800px;
 }
 .block-container > *{
     background-color: var(--glass-color)
