@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="source/styles/style.css">
         <title>Engla</title>
         <link rel="shortcut icon" href="source/images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="source/styles/burger.css">
     </head>
     <body>
     <header>
@@ -10,11 +11,30 @@
             <img src="source/images/logo.png" alt="-" width="40px" height="40px">
             <h1>Engla</h1>
         </div>
-        <nav>
+        <nav class="desktop-nav">
             <a href="topics.html">Полезные статьи</a>
-            <a href="exercise.html">Упражнения</a>
             <a href="index.html">Главная</a>
+            <a href="exercise.html">Упражнения</a>
         </nav>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__wrap">
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span> <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <a href="#" class="logo" id="logo"></a>
+                    <ul class="menu" id="menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="topics.html">Полезные статьи</a></li>
+                        <li><a href="exercise.html">Упражнения</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="popup" id="popup"></div>
     </header>
     
         <main>
@@ -72,11 +92,11 @@
                         <label for="diff">Другое</label>
                     </div>
                     <label for="reason_diff" id="reason_diff_label">Расскажите, какова ваша цель</label>
-                    <textarea class="glass" required="true" name="reason_diff" id="reason_diff" cols="30" rows="10" placeholder="Расскажите, для чего вам изучать английский" maxlength="300"></textarea>
+                    <textarea class="glass" required="true" name="reason_diff" id="reason_diff"  cols="50" rows="10" placeholder="Расскажите, для чего вам изучать английский" maxlength="300"></textarea>
                   <p>
-                      <label for="why" >Расскажите, почему вы выбрали именно нас</label>
                   <textarea class="glass" name="why" id="why" required="false" maxlength="300" minlength="20" placeholder="Введите ваш текст..."  cols="50" rows="10"></textarea> 
                 </p>
+                    <label for="why" >Расскажите, почему вы выбрали именно нас</label>
                 <p>
                     <label for="tel">Согласен на обработку персональных данных</label>
                     <input type="checkbox" name="check" id="check" required="true">
@@ -87,9 +107,8 @@
         </main>
             <script src="source/scripts/form.js"></script>
     <footer>
-        <div id="elem1"><a href="index.html">Наши курсы</a></div>
-        <div id="elem2"><a href="index.html">Подготовка к егэ</a></div>
-        <div id="elem3"><a href="index.html">Скидки и акции</a></div>
+        <div>Сайт создан студенткой группы ИКБО-01-21</div>
+        <div> Алекперова Алла Рауфовна</div>
         <address>
             <h4>Контакты</h4>
             <p><a href="tel:8-906-753-01-36">+7-906-753-01-36</a></p>
@@ -97,5 +116,6 @@
 
         </address>
     </footer>
+    <script src="source/scripts/burger-menu.js"></script>
     </body>
 </html>

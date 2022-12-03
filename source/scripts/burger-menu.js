@@ -2,13 +2,11 @@ const hamb = document.querySelector("#hamb");
 const popup = document.querySelector("#popup");
 const body = document.body;
 
-// Клонируем меню, чтобы задать свои стили для мобильной версии
-const menu = document.querySelector("#menu").cloneNode(1);
 
-// При клике на иконку hamb вызываем ф-ию hambHandler
+
 hamb.addEventListener("click", hambHandler);
 
-// Выполняем действия при клике ..
+// Выполняем действия при клике
 function hambHandler(e) {
     e.preventDefault();
     // Переключаем стили элементов при клике
@@ -18,7 +16,7 @@ function hambHandler(e) {
     renderPopup();
 }
 
-// Здесь мы рендерим элементы в наш попап
+// элементы в меню
 function renderPopup() {
     popup.appendChild(menu);
 }
@@ -31,7 +29,7 @@ links.forEach((link) => {
     link.addEventListener("click", closeOnClick);
 });
 
-// Закрытие попапа при клике на меню
+// Закрытие меню
 function closeOnClick() {
     popup.classList.remove("open");
     hamb.classList.remove("active");

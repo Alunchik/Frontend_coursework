@@ -12,12 +12,13 @@
 a{
     color: #ffffff;
 }
+
 body{
     color: #101010;
     background: #2d3041;
     font-size: 15pt;
+    overflow-x: hidden;
     height: 100vh;
-
 }
 
 .body-head-container{
@@ -88,6 +89,7 @@ textarea::placeholder{
 }
 textarea{
     color: #ffffff;
+    margin-left: -1000px;
 }
 
 .body-head-container{
@@ -103,14 +105,16 @@ textarea{
 
 }
 
+
 .profit-container {
     border-radius: 10px;
+    margin-inline: 20px;
     display: flex;
     gap: 20px;
     justify-content: space-between;
     flex-wrap: nowrap;
     background-color: #8EC5FC;
-    width: 100%;
+    /*width: 100%;*/
     margin-top:20px;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 }
@@ -124,9 +128,10 @@ textarea{
 
     /*background: linear-gradient(203deg, rgba(255,191,64,1) 23%, rgba(235,79,192,0.5966873810070903) 99%, rgba(154,222,49,0.9617666890975141) 100%);}*/
 .profit-container > div{
-    min-width: 150px;
+    min-width: 120px;
     height: 300px;
     flex-grow: 1;
+    margin-inline: 20px;
     background: var(--glass-color);
 }
 

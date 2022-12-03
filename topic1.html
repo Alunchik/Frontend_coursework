@@ -4,6 +4,7 @@
     <title>Выбор слова: choose / select / pick / elect</title>
     <link rel="stylesheet" href="source/styles/style.css">
     <link rel="stylesheet" href="source/styles/topic.css">
+    <link rel="stylesheet" href="source/styles/burger.css">
     <link rel="shortcut icon" href="source/images/logo.png" type="image/x-icon">
 </head>
 
@@ -14,11 +15,30 @@
         <img src="source/images/logo.png" alt="-" width="40px" height="40px">
         <h1>Engla</h1>
     </div>
-    <nav>
+    <nav class="desktop-nav">
         <a href="topics.html">Полезные статьи</a>
-        <a href="exercise.html">Упражнения</a>
         <a href="index.html">Главная</a>
+        <a href="exercise.html">Упражнения</a>
     </nav>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__wrap">
+                <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                        <span class="bar"></span> <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <a href="#" class="logo" id="logo"></a>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="topics.html">Полезные статьи</a></li>
+                    <li><a href="exercise.html">Упражнения</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="popup" id="popup"></div>
 </header>
     <main>
         <article class="glass">
@@ -68,9 +88,8 @@
         </article>
     </main>
 <footer>
-    <div id="elem1"><a href="index.html">Наши курсы</a></div>
-    <div id="elem2"><a href="index.html">Подготовка к егэ</a></div>
-    <div id="elem3"><a href="index.html">Скидки и акции</a></div>
+    <div>Сайт создан студенткой группы ИКБО-01-21</div>
+    <div> Алекперова Алла Рауфовна</div>
     <address>
         <h4>Контакты</h4>
         <p><a href="tel:8-906-753-01-36">+7-906-753-01-36</a></p>
@@ -79,5 +98,6 @@
     </address>
 </footer>
     </body>
+<script src="source/scripts/burger-menu.js"></script>
     <script src="scripts/form.js"></script>
 </html>
