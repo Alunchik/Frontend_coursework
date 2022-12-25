@@ -19,8 +19,6 @@ body{
     font-size: 15pt;
     overflow-x: hidden;
     height: 100vh;
-    width: 100%;
-    overflow: hidden;
 }
 
 .body-head-container{
@@ -209,6 +207,10 @@ input{
 
 @media (max-width:720px){
 
+
+    .body-head{
+        width: 90%;
+    }
     .profit-container{
         border-radius: 10px;
     }
