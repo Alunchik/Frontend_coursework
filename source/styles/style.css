@@ -75,6 +75,7 @@ nav{
 header img{
     position: absolute;
     left: 10px;
+    width: 90%;
 }
 
 .href_butt{
