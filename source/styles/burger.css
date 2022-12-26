@@ -126,11 +126,11 @@
 }
 
 .popup .menu > li {
-    /*width: 100%;*/
+    width: 100%;
 }
 
 .popup .menu > li > a {
-    /*width: 100%;*/
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 20px 0;
