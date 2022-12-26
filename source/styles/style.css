@@ -235,7 +235,12 @@ input{
     .profit-container > div{
         width: 90%;
     }
+    footer *{
+        font-size: 12pt;
+    }
     footer {
+        width: 100vw;
+        overflow: hidden;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
